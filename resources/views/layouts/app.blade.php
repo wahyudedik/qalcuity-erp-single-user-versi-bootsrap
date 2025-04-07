@@ -250,6 +250,12 @@
                             <i class="ti ti-user me-2"></i>
                             Profile
                         </a>
+
+                        <a href="#" class="dropdown-item">
+                            <i class="ti ti-wallet me-2"></i>
+                            Wallet
+                        </a>
+
                         <a href="#" class="dropdown-item">
                             <i class="ti ti-settings me-2"></i>
                             Settings
@@ -294,7 +300,25 @@
                             </a>
                         </li>
 
+                        <!-- Branch Management Module -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#navbar-branches" data-bs-toggle="dropdown"
+                                data-bs-auto-close="false" role="button">
+                                <span class="nav-link-icon">
+                                    <i class="ti ti-building-factory-2"></i>
+                                </span>
+                                <span class="nav-link-title">Branches</span>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{{ route('branches.index') }}">Branch List</a>
+                                <a class="dropdown-item" href="{{ route('branches.create') }}">Add New Branch</a>
+                                <a class="dropdown-item" href="{{ route('branches.performance') }}">Performance
+                                    Dashboard</a>
+                            </div>
+                        </li>
+
                         <div class="module-divider">Core Modules</div>
+
 
                         <!-- Finance Module -->
                         <li class="nav-item dropdown">
@@ -306,9 +330,11 @@
                                 <span class="nav-link-title">Finance</span>
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{{ route('finance.accounting') }}">Accounting & Bookkeeping</a>
+                                <a class="dropdown-item" href="{{ route('finance.accounting') }}">Accounting &
+                                    Bookkeeping</a>
                                 <a class="dropdown-item" href="{{ route('finance.payroll') }}">Payroll</a>
-                                <a class="dropdown-item" href="{{ route('finance.cost-management') }}">Cost Management</a>
+                                <a class="dropdown-item" href="{{ route('finance.cost-management') }}">Cost
+                                    Management</a>
                                 <a class="dropdown-item" href="{{ route('finance.reports') }}">Financial Reports</a>
                             </div>
                         </li>
@@ -323,9 +349,12 @@
                                 <span class="nav-link-title">Sales</span>
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="{{ route('sales.customer-management') }}">Customer Management</a>
-                                <a class="dropdown-item" href="{{ route('sales.quotes-contracts') }}">Quotes & Contracts</a>
-                                <a class="dropdown-item" href="#">Invoicing & Payments</a>
+                                <a class="dropdown-item" href="{{ route('sales.customer-management') }}">Customer
+                                    Management</a>
+                                <a class="dropdown-item" href="{{ route('sales.quotes-contracts') }}">Quotes &
+                                    Contracts</a>
+                                <a class="dropdown-item" href="{{ route('sales.invoices') }}">Invoicing &
+                                    Payments</a>
                             </div>
                         </li>
 
@@ -339,11 +368,20 @@
                                 <span class="nav-link-title">Production</span>
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Production Planning</a>
-                                <a class="dropdown-item" href="#">Raw Material Management</a>
-                                <a class="dropdown-item" href="#">Quality Control</a>
-                                <a class="dropdown-item" href="#">Mix Design</a>
-                                <a class="dropdown-item" href="#">Batch Plant Monitoring</a>
+                                <a class="dropdown-item" href="{{ route('production.planning') }}">Production
+                                    Planning</a>
+                                <a class="dropdown-item" href="{{ route('production.raw-materials') }}">Raw Material
+                                    Management</a>
+                                <a class="dropdown-item" href="{{ route('production.quality-control') }}">Quality
+                                    Control</a>
+                                <a class="dropdown-item" href="{{ route('production.machine-maintenance') }}">Machine
+                                    Maintenance</a>
+                                <a class="dropdown-item" href="{{ route('production.mix-design.index') }}">Mix
+                                    Design</a>
+                                <a class="dropdown-item" href="{{ route('production.batch-plant') }}">Batch Plant
+                                    Monitoring</a>
+                                <a class="dropdown-item" href="{{ route('production.strength-testing') }}">Strength
+                                    Testing</a>
                             </div>
                         </li>
 
@@ -357,10 +395,14 @@
                                 <span class="nav-link-title">Warehouse</span>
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Raw Material Inventory</a>
-                                <a class="dropdown-item" href="#">Finished Product Inventory</a>
-                                <a class="dropdown-item" href="#">Silo Management</a>
-                                <a class="dropdown-item" href="#">Stock Opname</a>
+                                <a class="dropdown-item" href="{{ route('warehouse.raw-materials') }}">Raw Material
+                                    Inventory</a>
+                                <a class="dropdown-item" href="{{ route('warehouse.finished-products') }}">Finished
+                                    Product Inventory</a>
+                                <a class="dropdown-item" href="{{ route('warehouse.silo-management') }}">Silo
+                                    Management</a>
+                                <a class="dropdown-item" href="{{ route('warehouse.stock-opname') }}">Stock
+                                    Opname</a>
                             </div>
                         </li>
 
@@ -376,10 +418,13 @@
                                 <span class="nav-link-title">HR</span>
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Employee Data</a>
-                                <a class="dropdown-item" href="#">Attendance</a>
-                                <a class="dropdown-item" href="#">Shift Management</a>
-                                <a class="dropdown-item" href="#">Training</a>
+                                <a class="dropdown-item" href="{{ route('hr.employees.index') }}">Employee Data</a>
+                                <a class="dropdown-item" href="{{ route('hr.attendance.index') }}">Attendance</a>
+                                <a class="dropdown-item" href="{{ route('hr.shifts.index') }}">Shift Management</a>
+                                <a class="dropdown-item" href="{{ route('hr.leave.index') }}">Leave Management</a>
+                                <a class="dropdown-item" href="{{ route('hr.payroll.index') }}">Payroll</a>
+                                <a class="dropdown-item" href="{{ route('hr.training.index') }}">Training</a>
+                                <a class="dropdown-item" href="{{ route('hr.performance.index') }}">Performance & KPI</a>
                             </div>
                         </li>
 
@@ -393,9 +438,9 @@
                                 <span class="nav-link-title">Delivery</span>
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Delivery Routes</a>
-                                <a class="dropdown-item" href="#">Fleet Management</a>
-                                <a class="dropdown-item" href="#">Scheduling</a>
+                                <a class="dropdown-item" href="{{ route('delivery.routes') }}">Delivery Routes</a>
+                                <a class="dropdown-item" href="{{ route('delivery.fleet') }}">Fleet Management</a>
+                                <a class="dropdown-item" href="{{ route('delivery.scheduling') }}">Scheduling</a>
                                 <a class="dropdown-item" href="#">GPS Tracking</a>
                                 <a class="dropdown-item" href="#">Delivery Orders</a>
                             </div>
@@ -504,7 +549,7 @@
                         <div class="module-divider">System</div>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{ route('production.batch-plant.settings') }}">
                                 <span class="nav-link-icon">
                                     <i class="ti ti-settings"></i>
                                 </span>
@@ -626,7 +671,7 @@
                                     <i class="ti ti-user me-2"></i>
                                     Profile
                                 </a>
-                                <a href="#" class="dropdown-item">
+                                <a href="{{ route('production.batch-plant.settings') }}" class="dropdown-item">
                                     <i class="ti ti-settings me-2"></i>
                                     Settings
                                 </a>

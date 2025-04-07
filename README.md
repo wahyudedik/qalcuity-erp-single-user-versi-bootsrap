@@ -49,43 +49,49 @@ Daftar rincian simple modul yang telah kita susun mencakup:
     - Batch plant operation
     - Quality testing
 
+
+
 Modul pabrik beton cair:
+0. Multi Cabang
 1. Keuangan
-  - Akuntansi & Pembukuan
-  - Penggajian
-  - Manajemen Biaya
-  - Pelaporan Keuangan
+  - Akuntansi & Pembukuan = desain done
+  - Penggajian = desain done
+  - Manajemen Biaya = desain done
+  - Pelaporan Keuangan = desain done
 
 2. Penjualan
-  - Manajemen Pelanggan
-  - Penawaran & Kontrak
-  - Invoice & Pembayaran
+  - Manajemen Pelanggan = desain done
+  - Penawaran & Kontrak = desain done
+  - Invoice & Pembayaran = desain done
 
 3. Produksi
-  - Perencanaan Produksi
-  - Manajemen Bahan Baku
-  - Quality Control
-  - Pemeliharaan Mesin
-  - Formula & Mix Design
-  - Monitoring Batch Plant
-  - Pengujian Kuat Tekan
+  - Perencanaan Produksi = desain done
+  - Manajemen Bahan Baku = desain done
+  - Quality Control = desain done
+  - Pemeliharaan Mesin = desain done
+  - Formula & Mix Design = desain done
+  - Monitoring Batch Plant = desain done
+  - Pengujian Kuat Tekan = desain done
 
 4. Gudang
-  - Inventory Bahan Baku
-  - Inventory Produk Jadi
-  - Manajemen Silo
-  - Stock Opname
+  - Inventory Bahan Baku = desain done
+  - Inventory Produk Jadi = desain done
+  - Manajemen Silo = desain done
+  - Stock Opname = desain done
 
 5. Karyawan
-  - Data Karyawan
-  - Absensi
-  - Shift Kerja
-  - Training
+  - Data Karyawan = desain done
+  - Absensi = desain done
+  - Shift Kerja = desain done
+  - leave = desainn done
+  - Penggajian = desian done
+  - Training = desain done
+  - Performance karyawan atau kpi = desain done
 
 6. Pengiriman
-  - Rute Pengiriman
-  - Manajemen Armada
-  - Penjadwalan
+  - Rute Pengiriman = desain done
+  - Manajemen Armada = desain done
+  - Penjadwalan = desain done
   - GPS Tracking
   - Delivery Order
 
